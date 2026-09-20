@@ -11,17 +11,38 @@
 
     <meta
         name="description"
-        content="Portfolio of Khurotaayun Pesona Subagja - Data Analyst, Market Insight, Business Intelligence, and Machine Learning."
+        content="Portfolio of Khurotaayun Pesona Subagja - Data Analytics, Market Insight, Business Intelligence, Automation, and Machine Learning."
     >
 
     <title>Khurotaayun | Portfolio</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- GOOGLE FONT -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
-    <!-- ICONS -->
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- FONT AWESOME -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
     >
 </head>
 
@@ -35,43 +56,94 @@
 
         <div class="container nav-container">
 
-            <a href="#home" class="logo">
-                Khurotaayun.
+            <a
+                href="#home"
+                class="logo"
+            >
+                Khurotaayun<span>.</span>
             </a>
 
+
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
+
+                <a href="#about">
+                    About
+                </a>
+
+                <a href="#education">
+                    Education
+                </a>
+
+                <a href="#experience">
+                    Experience
+                </a>
+
+                <a href="#projects">
+                    Projects
+                </a>
+
+                <a href="#skills">
+                    Skills
+                </a>
+
+                <a href="#contact">
+                    Contact
+                </a>
+
             </div>
+
 
             <button
                 class="menu-toggle"
                 type="button"
                 aria-label="Open navigation"
+                aria-expanded="false"
             >
                 <i class="fa-solid fa-bars"></i>
             </button>
 
         </div>
 
+
         <div class="mobile-menu">
-            <a href="#about">About</a>
-            <a href="#experience">Experience</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#education">
+                Education
+            </a>
+
+            <a href="#experience">
+                Experience
+            </a>
+
+            <a href="#projects">
+                Projects
+            </a>
+
+            <a href="#skills">
+                Skills
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
         </div>
 
     </nav>
 
 
+
     <!-- =====================================================
          HERO
     ====================================================== -->
-    <section id="home" class="hero">
+    <section
+        id="home"
+        class="hero"
+    >
 
         <div class="container hero-layout">
 
@@ -81,19 +153,23 @@
                     Hi, I'm
                 </p>
 
+
                 <h1>
                     Khurotaayun Pesona Subagja
                 </h1>
 
+
                 <h2>
-                    Data Analyst • Market Insight • Business Intelligence
+                    Data Analytics • Market Insight • Business Intelligence
                 </h2>
 
+
                 <p class="hero-description">
-                    Turning data into meaningful insights,
-                    building analytical solutions, and supporting
-                    better business decisions through data.
+                    Exploring problems through analytical and business
+                    perspectives to build practical data solutions
+                    and support better decisions.
                 </p>
+
 
                 <div class="hero-buttons">
 
@@ -104,25 +180,52 @@
                         View Projects
                     </a>
 
+
                     <a
                         href="files/CV_KHUROTAAYUN.pdf"
                         class="btn btn-secondary"
                         download
                     >
                         <i class="fa-solid fa-download"></i>
+
                         Download CV
                     </a>
 
                 </div>
 
+
+                <div class="hero-focus">
+
+                    <span>
+                        <i class="fa-solid fa-chart-line"></i>
+                        Analytics
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-gears"></i>
+                        Automation
+                    </span>
+
+                    <span>
+                        <i class="fa-solid fa-brain"></i>
+                        Machine Learning
+                    </span>
+
+                </div>
+
             </div>
 
-            <div class="hero-photo">
 
-                <img
-                    src="assets/profile.jpg"
-                    alt="Khurotaayun Pesona Subagja"
-                >
+            <div class="hero-photo-wrapper">
+
+                <div class="hero-photo">
+
+                    <img
+                        src="assets/profile.jpg"
+                        alt="Khurotaayun Pesona Subagja"
+                    >
+
+                </div>
 
             </div>
 
@@ -131,10 +234,14 @@
     </section>
 
 
+
     <!-- =====================================================
          ABOUT
     ====================================================== -->
-    <section id="about" class="section">
+    <section
+        id="about"
+        class="section"
+    >
 
         <div class="container">
 
@@ -142,33 +249,216 @@
                 ABOUT ME
             </p>
 
+
             <h2 class="section-title">
                 A little bit about me
             </h2>
 
-            <p class="about-text">
-                I enjoy exploring problems from both analytical
-                and business perspectives, then turning data into
-                insights that support better decisions.
-            </p>
 
-            <p class="about-text second-paragraph">
-                A recent Business Statistics graduate from
-                Institut Teknologi Sepuluh Nopember (ITS),
-                with hands-on experience in data analytics,
-                market insight, dashboard development,
-                and workflow automation.
-            </p>
+            <div class="about-layout">
 
-            <p class="about-text second-paragraph">
-                I continuously build self-initiated projects
-                to explore machine learning, NLP, automation,
-                and other data-driven solutions.
-            </p>
+                <div class="about-copy">
+
+                    <p class="about-highlight">
+                        I enjoy exploring problems from both analytical
+                        and business perspectives, then turning data into
+                        insights that support better decisions.
+                    </p>
+
+
+                    <p class="about-text">
+                        A recent Business Statistics graduate from
+                        Institut Teknologi Sepuluh Nopember (ITS),
+                        with hands-on experience in data analytics,
+                        market insight, dashboard development,
+                        and workflow automation.
+                    </p>
+
+
+                    <p class="about-text">
+                        I continuously build self-initiated projects
+                        to explore machine learning, NLP, automation,
+                        and other data-driven solutions.
+                    </p>
+
+                </div>
+
+
+                <div class="about-capabilities">
+
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+                            <i class="fa-solid fa-chart-column"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Data Analytics
+                            </h3>
+
+                            <p>
+                                Statistical analysis, visualization,
+                                exploration, and reporting.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Market Insight
+                            </h3>
+
+                            <p>
+                                Consumer research, competitor analysis,
+                                surveys, and business insights.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Business Intelligence
+                            </h3>
+
+                            <p>
+                                Dashboards and reporting systems
+                                designed to support decisions.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="capability-card">
+
+                        <div class="capability-icon">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Machine Learning
+                            </h3>
+
+                            <p>
+                                Predictive modeling, NLP,
+                                and computer vision experimentation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
+
+
+
+    <!-- =====================================================
+         EDUCATION
+    ====================================================== -->
+    <section
+        id="education"
+        class="section section-light"
+    >
+
+        <div class="container">
+
+            <p class="section-label">
+                EDUCATION
+            </p>
+
+
+            <h2 class="section-title">
+                Academic Background
+            </h2>
+
+
+            <div class="education-card">
+
+                <div class="education-icon">
+
+                    <i class="fa-solid fa-graduation-cap"></i>
+
+                </div>
+
+
+                <div class="education-content">
+
+                    <span class="education-degree">
+                        Bachelor's Degree
+                    </span>
+
+
+                    <h3>
+                        Business Statistics
+                    </h3>
+
+
+                    <p class="education-university">
+                        Institut Teknologi Sepuluh Nopember (ITS)
+                    </p>
+
+
+                    <div class="education-meta">
+
+                        <span>
+
+                            <i class="fa-solid fa-location-dot"></i>
+
+                            Surabaya, Indonesia
+
+                        </span>
+
+
+                        <span>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            GPA 3.38 / 4.00
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
 
     <!-- =====================================================
@@ -176,7 +466,7 @@
     ====================================================== -->
     <section
         id="experience"
-        class="section section-light"
+        class="section"
     >
 
         <div class="container">
@@ -185,13 +475,15 @@
                 EXPERIENCE
             </p>
 
+
             <h2 class="section-title">
                 Work Experience
             </h2>
 
+
             <p class="section-description">
-                Click each experience to explore my responsibilities,
-                key outputs, and documentation.
+                Explore my responsibilities, key outputs,
+                and work documentation.
             </p>
 
 
@@ -223,6 +515,7 @@
 
                         </div>
 
+
                         <div class="experience-right">
 
                             <span class="experience-year">
@@ -250,6 +543,7 @@
                                         What I Did
                                     </h4>
 
+
                                     <ul>
 
                                         <li>
@@ -271,14 +565,14 @@
                                         </li>
 
                                         <li>
-                                            Analyzed customer behavior by
-                                            geographic area and survey results.
+                                            Analyzed customer behavior using
+                                            survey and geographic data.
                                         </li>
 
                                         <li>
                                             Conducted geographic proximity
-                                            analysis between respondents and
-                                            Lion Parcel agent locations.
+                                            analysis between respondents
+                                            and agent locations.
                                         </li>
 
                                     </ul>
@@ -287,6 +581,7 @@
                                     <h4>
                                         Key Outputs
                                     </h4>
+
 
                                     <div class="output-list">
 
@@ -346,6 +641,7 @@
                 </article>
 
 
+
                 <!-- MARKET INSIGHT INTERN -->
                 <article class="experience-item">
 
@@ -370,6 +666,7 @@
                             </p>
 
                         </div>
+
 
                         <div class="experience-right">
 
@@ -398,11 +695,12 @@
                                         What I Did
                                     </h4>
 
+
                                     <ul>
 
                                         <li>
                                             Analyzed quarterly Customer Satisfaction
-                                            (CSAT) data using Python.
+                                            data using Python.
                                         </li>
 
                                         <li>
@@ -426,6 +724,7 @@
                                     <h4>
                                         Key Outputs
                                     </h4>
+
 
                                     <div class="output-list">
 
@@ -485,6 +784,7 @@
                 </article>
 
 
+
                 <!-- TEACHING ASSISTANT -->
                 <article class="experience-item">
 
@@ -509,6 +809,7 @@
                             </p>
 
                         </div>
+
 
                         <div class="experience-right">
 
@@ -537,12 +838,13 @@
                                         What I Did
                                     </h4>
 
+
                                     <ul>
 
                                         <li>
-                                            Mentored 36 students through
-                                            10 practicum assignments and
-                                            4 final projects.
+                                            Mentored students through
+                                            database practicum sessions
+                                            and final projects.
                                         </li>
 
                                         <li>
@@ -551,19 +853,13 @@
                                         </li>
 
                                         <li>
-                                            Evaluated practicum assignments
-                                            while maintaining approximately
-                                            85% grading accuracy.
+                                            Evaluated assignments and
+                                            monitored student progress.
                                         </li>
 
                                         <li>
-                                            Supported students in SQL queries
-                                            and database design.
-                                        </li>
-
-                                        <li>
-                                            Monitored and reported weekly
-                                            student progress to the lecturer.
+                                            Supported SQL queries,
+                                            database design, and troubleshooting.
                                         </li>
 
                                     </ul>
@@ -572,6 +868,7 @@
                                     <h4>
                                         Key Outputs
                                     </h4>
+
 
                                     <div class="output-list">
 
@@ -604,6 +901,7 @@
                 </article>
 
 
+
                 <!-- DISBUDPAR -->
                 <article class="experience-item">
 
@@ -628,6 +926,7 @@
                             </p>
 
                         </div>
+
 
                         <div class="experience-right">
 
@@ -656,23 +955,22 @@
                                         What I Did
                                     </h4>
 
+
                                     <ul>
 
                                         <li>
-                                            Designed content for the
-                                            Travel Pattern Mojokerto tourism
-                                            brochure using Canva.
+                                            Designed content for the Travel Pattern
+                                            Mojokerto tourism brochure.
                                         </li>
 
                                         <li>
                                             Analyzed and visualized East Java
-                                            tourism data using Google Looker Studio.
+                                            tourism data using Looker Studio.
                                         </li>
 
                                         <li>
-                                            Served as a tour guide for
-                                            360 participants during a
-                                            cultural tourism program.
+                                            Supported tourism activities
+                                            and participant engagement.
                                         </li>
 
                                         <li>
@@ -686,6 +984,7 @@
                                     <h4>
                                         Key Outputs
                                     </h4>
+
 
                                     <div class="output-list">
 
@@ -727,7 +1026,7 @@
                                     <img
                                         class="zoomable"
                                         src="assets/experience/disbudpar/disbudpar-3.jpg"
-                                        alt="Disbudpar internship documentation"
+                                        alt="Disbudpar documentation"
                                     >
 
                                 </div>
@@ -740,6 +1039,7 @@
 
                 </article>
 
+
             </div>
 
         </div>
@@ -747,12 +1047,13 @@
     </section>
 
 
+
     <!-- =====================================================
          PROJECTS
     ====================================================== -->
     <section
         id="projects"
-        class="section"
+        class="section section-light"
     >
 
         <div class="container">
@@ -761,22 +1062,66 @@
                 PORTFOLIO
             </p>
 
+
             <h2 class="section-title">
-                Projects
+                Selected Projects
             </h2>
 
+
             <p class="section-description">
-                Projects covering analytics, market insight,
-                machine learning, automation, computer vision,
-                and customer review analysis.
+                Explore projects across data analytics,
+                machine learning, and automation.
             </p>
+
+
+
+            <!-- FILTER -->
+            <div class="project-filter">
+
+                <button
+                    type="button"
+                    class="filter-btn active"
+                    data-filter="all"
+                >
+                    All Projects
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="analytics"
+                >
+                    Data Analytics
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="machine-learning"
+                >
+                    Machine Learning
+                </button>
+
+                <button
+                    type="button"
+                    class="filter-btn"
+                    data-filter="automation"
+                >
+                    Automation
+                </button>
+
+            </div>
+
 
 
             <div class="project-grid">
 
 
                 <!-- PROJECT 01 -->
-                <article class="project-card">
+                <article
+                    class="project-card"
+                    data-category="analytics"
+                >
 
                     <div class="project-image">
 
@@ -788,22 +1133,33 @@
 
                     </div>
 
+
                     <div class="project-content">
 
-                        <div class="project-number">
-                            01
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                Data Analytics • Business Intelligence
+                            </span>
+
+                            <span class="project-number">
+                                01
+                            </span>
+
                         </div>
+
 
                         <h3>
                             Market Insight Dashboard
                         </h3>
 
+
                         <p>
-                            An interactive survey analytics dashboard
+                            Interactive survey analytics dashboard
                             for processing, filtering, analyzing,
-                            and visualizing customer and market
-                            research data.
+                            and visualizing customer and market research data.
                         </p>
+
 
                         <div class="tools">
 
@@ -814,6 +1170,7 @@
 
                         </div>
 
+
                         <div class="project-links">
 
                             <a
@@ -823,6 +1180,7 @@
                                 class="project-btn"
                             >
                                 Live Demo
+
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
 
@@ -833,8 +1191,12 @@
                 </article>
 
 
+
                 <!-- PROJECT 02 -->
-                <article class="project-card">
+                <article
+                    class="project-card"
+                    data-category="machine-learning analytics"
+                >
 
                     <div class="project-image">
 
@@ -846,22 +1208,33 @@
 
                     </div>
 
+
                     <div class="project-content">
 
-                        <div class="project-number">
-                            02
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                Machine Learning • Predictive Analytics
+                            </span>
+
+                            <span class="project-number">
+                                02
+                            </span>
+
                         </div>
+
 
                         <h3>
                             Customer Churn Prediction Dashboard
                         </h3>
 
+
                         <p>
-                            Machine learning dashboard developed
-                            to analyze customer churn and predict
-                            churn probability using Gradient
-                            Boosting techniques.
+                            Machine learning dashboard developed to analyze
+                            customer churn and estimate churn probability
+                            using gradient boosting models.
                         </p>
+
 
                         <div class="tools">
 
@@ -872,6 +1245,7 @@
 
                         </div>
 
+
                         <div class="project-links">
 
                             <a
@@ -881,6 +1255,7 @@
                                 class="project-btn"
                             >
                                 Live Demo
+
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
 
@@ -891,8 +1266,12 @@
                 </article>
 
 
+
                 <!-- PROJECT 03 -->
-                <article class="project-card">
+                <article
+                    class="project-card"
+                    data-category="machine-learning"
+                >
 
                     <div class="drowsiness-preview">
 
@@ -910,6 +1289,7 @@
 
                         </div>
 
+
                         <div class="drowsiness-image">
 
                             <img
@@ -926,6 +1306,7 @@
 
                     </div>
 
+
                     <div class="evaluation-preview">
 
                         <p>
@@ -940,32 +1321,43 @@
 
                     </div>
 
+
                     <div class="project-content">
 
-                        <div class="project-number">
-                            03
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                Machine Learning • Computer Vision
+                            </span>
+
+                            <span class="project-number">
+                                03
+                            </span>
+
                         </div>
+
 
                         <h3>
                             Drowsiness Detection System
                         </h3>
 
+
                         <p>
-                            Computer vision application developed
-                            to classify whether a person is awake
-                            or showing signs of drowsiness,
-                            including model evaluation and
-                            interactive deployment.
+                            Computer vision application developed to
+                            detect whether a person is awake or showing
+                            signs of drowsiness.
                         </p>
+
 
                         <div class="tools">
 
                             <span>Python</span>
-                            <span>Computer Vision</span>
                             <span>YOLO</span>
+                            <span>Computer Vision</span>
                             <span>Streamlit</span>
 
                         </div>
+
 
                         <div class="project-links">
 
@@ -976,6 +1368,7 @@
                                 class="project-btn"
                             >
                                 Live Demo
+
                                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
 
@@ -986,8 +1379,12 @@
                 </article>
 
 
+
                 <!-- PROJECT 04 -->
-                <article class="project-card">
+                <article
+                    class="project-card"
+                    data-category="analytics"
+                >
 
                     <div class="project-video">
 
@@ -1006,22 +1403,33 @@
 
                     </div>
 
+
                     <div class="project-content">
 
-                        <div class="project-number">
-                            04
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                Data Analytics • NLP • Web Scraping
+                            </span>
+
+                            <span class="project-number">
+                                04
+                            </span>
+
                         </div>
+
 
                         <h3>
                             Customer Review Insight — Mills Running Shoes
                         </h3>
 
+
                         <p>
-                            Collected customer reviews of Mills running
-                            shoes from Tokopedia and analyzed customer
-                            sentiment, recurring feedback, and product
-                            perceptions to uncover actionable insights.
+                            Customer review analysis designed to uncover
+                            sentiment, recurring feedback,
+                            and product perceptions from marketplace data.
                         </p>
+
 
                         <div class="mini-gallery">
 
@@ -1039,6 +1447,7 @@
 
                         </div>
 
+
                         <div class="tools">
 
                             <span>Python</span>
@@ -1054,8 +1463,12 @@
                 </article>
 
 
+
                 <!-- PROJECT 05 -->
-                <article class="project-card">
+                <article
+                    class="project-card"
+                    data-category="automation"
+                >
 
                     <div class="project-video">
 
@@ -1074,22 +1487,33 @@
 
                     </div>
 
+
                     <div class="project-content">
 
-                        <div class="project-number">
-                            05
+                        <div class="project-top">
+
+                            <span class="project-category">
+                                Automation • AI Workflow
+                            </span>
+
+                            <span class="project-number">
+                                05
+                            </span>
+
                         </div>
+
 
                         <h3>
                             AI Chatbot Automation with n8n
                         </h3>
 
+
                         <p>
-                            Automated chatbot workflow built using
-                            n8n to demonstrate workflow automation,
-                            system integration, and conversational
-                            interaction.
+                            Automated chatbot workflow demonstrating
+                            process automation, AI integration,
+                            and conversational interaction.
                         </p>
+
 
                         <div class="mini-gallery single-image">
 
@@ -1100,6 +1524,7 @@
                             >
 
                         </div>
+
 
                         <div class="tools">
 
@@ -1114,6 +1539,7 @@
 
                 </article>
 
+
             </div>
 
         </div>
@@ -1121,12 +1547,13 @@
     </section>
 
 
+
     <!-- =====================================================
          SKILLS
     ====================================================== -->
     <section
         id="skills"
-        class="section section-light"
+        class="section"
     >
 
         <div class="container">
@@ -1135,87 +1562,110 @@
                 SKILLS
             </p>
 
+
             <h2 class="section-title">
                 Tools & Technologies
             </h2>
 
 
+            <p class="section-description">
+                Technologies and analytical tools used across
+                professional work and self-initiated projects.
+            </p>
+
+
             <div class="skill-grid">
+
 
                 <div class="skill-card">
                     <i class="fa-brands fa-python"></i>
                     <span>Python</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-database"></i>
                     <span>SQL</span>
                 </div>
+
 
                 <div class="skill-card">
                     <i class="fa-solid fa-file-excel"></i>
                     <span>Excel</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-chart-column"></i>
                     <span>Power BI</span>
                 </div>
+
 
                 <div class="skill-card">
                     <i class="fa-solid fa-chart-pie"></i>
                     <span>Tableau</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Looker Studio</span>
                 </div>
+
 
                 <div class="skill-card">
                     <i class="fa-solid fa-laptop-code"></i>
                     <span>Streamlit</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-brain"></i>
                     <span>Machine Learning</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-language"></i>
-                    <span>Natural Language Processing</span>
+                    <span>NLP</span>
                 </div>
+
 
                 <div class="skill-card">
                     <i class="fa-solid fa-eye"></i>
                     <span>Computer Vision</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-robot"></i>
                     <span>n8n Automation</span>
                 </div>
+
 
                 <div class="skill-card">
                     <i class="fa-solid fa-code"></i>
                     <span>Web Scraping</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-magnifying-glass-chart"></i>
                     <span>Market Research</span>
                 </div>
+
 
                 <div class="skill-card">
                     <i class="fa-solid fa-square-poll-vertical"></i>
                     <span>Survey Analytics</span>
                 </div>
 
+
                 <div class="skill-card">
                     <i class="fa-solid fa-chart-simple"></i>
                     <span>Statistics</span>
                 </div>
+
 
             </div>
 
@@ -1224,12 +1674,13 @@
     </section>
 
 
+
     <!-- =====================================================
          CONTACT
     ====================================================== -->
     <section
         id="contact"
-        class="section"
+        class="section contact-section"
     >
 
         <div class="container">
@@ -1238,9 +1689,11 @@
                 CONTACT
             </p>
 
+
             <h2 class="section-title">
                 Let's Connect
             </h2>
+
 
             <p class="contact-description">
                 Feel free to reach out or explore more of my work.
@@ -1248,6 +1701,7 @@
 
 
             <div class="contact-grid">
+
 
                 <a
                     href="https://www.linkedin.com/in/khurotaayunpesonasubagja"
@@ -1260,7 +1714,8 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
 
-                    <div>
+
+                    <div class="contact-info">
 
                         <span class="contact-platform">
                             LinkedIn
@@ -1272,11 +1727,13 @@
 
                     </div>
 
+
                     <span class="contact-arrow">
                         ↗
                     </span>
 
                 </a>
+
 
 
                 <a
@@ -1290,7 +1747,8 @@
                         <i class="fa-brands fa-github"></i>
                     </div>
 
-                    <div>
+
+                    <div class="contact-info">
 
                         <span class="contact-platform">
                             GitHub
@@ -1302,11 +1760,13 @@
 
                     </div>
 
+
                     <span class="contact-arrow">
                         ↗
                     </span>
 
                 </a>
+
 
 
                 <a
@@ -1318,7 +1778,8 @@
                         <i class="fa-solid fa-envelope"></i>
                     </div>
 
-                    <div>
+
+                    <div class="contact-info">
 
                         <span class="contact-platform">
                             Email
@@ -1330,17 +1791,20 @@
 
                     </div>
 
+
                     <span class="contact-arrow">
                         ↗
                     </span>
 
                 </a>
 
+
             </div>
 
         </div>
 
     </section>
+
 
 
     <!-- =====================================================
@@ -1355,6 +1819,7 @@
                 Khurotaayun Pesona Subagja
             </p>
 
+
             <a href="#home">
                 Back to top ↑
             </a>
@@ -1362,6 +1827,7 @@
         </div>
 
     </footer>
+
 
 
     <!-- =====================================================
@@ -1380,6 +1846,7 @@
         >
             ×
         </button>
+
 
         <img
             id="lightbox-image"
