@@ -20,7 +20,7 @@ document.addEventListener(
 
 
         /* =====================================================
-           NAVBAR SCROLL EFFECT
+           NAVBAR
         ====================================================== */
 
         const navbar =
@@ -28,29 +28,32 @@ document.addEventListener(
                 "navbar"
             );
 
-        const updateNavbar = () => {
 
-            if (!navbar) {
-                return;
-            }
+        const updateNavbar =
+            () => {
 
-            if (
-                window.scrollY > 20
-            ) {
+                if (!navbar) {
+                    return;
+                }
 
-                navbar.classList.add(
-                    "scrolled"
-                );
 
-            } else {
+                if (
+                    window.scrollY > 20
+                ) {
 
-                navbar.classList.remove(
-                    "scrolled"
-                );
+                    navbar.classList.add(
+                        "scrolled"
+                    );
 
-            }
+                } else {
 
-        };
+                    navbar.classList.remove(
+                        "scrolled"
+                    );
+
+                }
+
+            };
 
 
         updateNavbar();
@@ -100,33 +103,34 @@ document.addEventListener(
                         );
 
 
-                    if (icon) {
+                    if (!icon) {
+                        return;
+                    }
 
-                        if (
-                            mobileMenu.classList.contains(
-                                "active"
-                            )
-                        ) {
 
-                            icon.classList.remove(
-                                "fa-bars"
-                            );
+                    if (
+                        mobileMenu.classList.contains(
+                            "active"
+                        )
+                    ) {
 
-                            icon.classList.add(
-                                "fa-xmark"
-                            );
+                        icon.classList.remove(
+                            "fa-bars"
+                        );
 
-                        } else {
+                        icon.classList.add(
+                            "fa-xmark"
+                        );
 
-                            icon.classList.remove(
-                                "fa-xmark"
-                            );
+                    } else {
 
-                            icon.classList.add(
-                                "fa-bars"
-                            );
+                        icon.classList.remove(
+                            "fa-xmark"
+                        );
 
-                        }
+                        icon.classList.add(
+                            "fa-bars"
+                        );
 
                     }
 
@@ -213,49 +217,39 @@ document.addEventListener(
                             );
 
 
-                        /*
-                         * Close other experiences
-                         */
-
                         experienceItems.forEach(
                             (otherItem) => {
 
                                 if (
-                                    otherItem !==
-                                    item
+                                    otherItem === item
                                 ) {
+                                    return;
+                                }
 
-                                    otherItem.classList.remove(
-                                        "active"
+
+                                otherItem.classList.remove(
+                                    "active"
+                                );
+
+
+                                const otherButton =
+                                    otherItem.querySelector(
+                                        ".experience-toggle"
                                     );
 
 
-                                    const otherButton =
-                                        otherItem.querySelector(
-                                            ".experience-toggle"
-                                        );
+                                if (otherButton) {
 
-
-                                    if (
-                                        otherButton
-                                    ) {
-
-                                        otherButton.setAttribute(
-                                            "aria-expanded",
-                                            "false"
-                                        );
-
-                                    }
+                                    otherButton.setAttribute(
+                                        "aria-expanded",
+                                        "false"
+                                    );
 
                                 }
 
                             }
                         );
 
-
-                        /*
-                         * Toggle selected experience
-                         */
 
                         if (isActive) {
 
@@ -306,6 +300,7 @@ document.addEventListener(
             document.querySelector(
                 ".lightbox-close"
             );
+
 
         const zoomableImages =
             document.querySelectorAll(
@@ -379,8 +374,7 @@ document.addEventListener(
                 setTimeout(
                     () => {
 
-                        lightboxImage.src =
-                            "";
+                        lightboxImage.src = "";
 
                     },
                     250
@@ -456,7 +450,7 @@ document.addEventListener(
 
 
         /* =====================================================
-           SMOOTH ANCHOR NAVIGATION
+           SMOOTH SCROLL
         ====================================================== */
 
         const anchorLinks =
@@ -502,11 +496,8 @@ document.addEventListener(
 
                         target.scrollIntoView(
                             {
-                                behavior:
-                                    "smooth",
-
-                                block:
-                                    "start"
+                                behavior: "smooth",
+                                block: "start"
                             }
                         );
 
@@ -573,10 +564,9 @@ document.addEventListener(
                                         );
 
 
-                                    observerInstance
-                                        .unobserve(
-                                            entry.target
-                                        );
+                                    observerInstance.unobserve(
+                                        entry.target
+                                    );
 
                                 }
 
@@ -587,6 +577,7 @@ document.addEventListener(
 
                     {
                         threshold: 0.10,
+
                         rootMargin:
                             "0px 0px -40px 0px"
                     }
@@ -620,7 +611,7 @@ document.addEventListener(
 
 
         /* =====================================================
-           IMAGE ERROR FALLBACK
+           IMAGE ERROR DEBUGGING
         ====================================================== */
 
         const allImages =
@@ -637,15 +628,10 @@ document.addEventListener(
                     () => {
 
                         console.warn(
-                            "Image failed to load:",
+                            "Failed image:",
                             image.getAttribute(
                                 "src"
                             )
-                        );
-
-
-                        image.classList.add(
-                            "image-error"
                         );
 
                     }
