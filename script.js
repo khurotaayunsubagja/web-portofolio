@@ -1,413 +1,658 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-    /* =====================================================
-       CURRENT YEAR
-    ====================================================== */
-    const yearElement = document.getElementById("year");
+        /* =====================================================
+           CURRENT YEAR
+        ====================================================== */
 
-    if (yearElement) {
-        yearElement.textContent = new Date().getFullYear();
-    }
-
-
-
-    /* =====================================================
-       MOBILE NAVIGATION
-    ====================================================== */
-    const menuToggle = document.querySelector(".menu-toggle");
-    const mobileMenu = document.querySelector(".mobile-menu");
-
-    if (menuToggle && mobileMenu) {
-
-        menuToggle.addEventListener("click", () => {
-
-            const isOpen =
-                mobileMenu.classList.toggle("active");
-
-            menuToggle.setAttribute(
-                "aria-expanded",
-                isOpen
+        const yearElement =
+            document.getElementById(
+                "year"
             );
 
-            document.body.classList.toggle(
-                "menu-open",
-                isOpen
+        if (yearElement) {
+
+            yearElement.textContent =
+                new Date().getFullYear();
+
+        }
+
+
+        /* =====================================================
+           NAVBAR SCROLL EFFECT
+        ====================================================== */
+
+        const navbar =
+            document.getElementById(
+                "navbar"
             );
 
+        const updateNavbar = () => {
 
-            const icon =
-                menuToggle.querySelector("i");
+            if (!navbar) {
+                return;
+            }
 
-            if (icon) {
+            if (
+                window.scrollY > 20
+            ) {
 
-                icon.className = isOpen
-                    ? "fa-solid fa-xmark"
-                    : "fa-solid fa-bars";
+                navbar.classList.add(
+                    "scrolled"
+                );
+
+            } else {
+
+                navbar.classList.remove(
+                    "scrolled"
+                );
 
             }
 
-        });
+        };
 
 
-        mobileMenu
-            .querySelectorAll("a")
-            .forEach(link => {
+        updateNavbar();
 
-                link.addEventListener("click", () => {
 
-                    mobileMenu.classList.remove("active");
+        window.addEventListener(
+            "scroll",
+            updateNavbar,
+            {
+                passive: true
+            }
+        );
 
-                    menuToggle.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
 
-                    document.body.classList.remove(
-                        "menu-open"
+        /* =====================================================
+           MOBILE MENU
+        ====================================================== */
+
+        const menuToggle =
+            document.querySelector(
+                ".menu-toggle"
+            );
+
+        const mobileMenu =
+            document.querySelector(
+                ".mobile-menu"
+            );
+
+
+        if (
+            menuToggle &&
+            mobileMenu
+        ) {
+
+            menuToggle.addEventListener(
+                "click",
+                () => {
+
+                    mobileMenu.classList.toggle(
+                        "active"
                     );
 
 
                     const icon =
-                        menuToggle.querySelector("i");
+                        menuToggle.querySelector(
+                            "i"
+                        );
+
 
                     if (icon) {
-                        icon.className =
-                            "fa-solid fa-bars";
+
+                        if (
+                            mobileMenu.classList.contains(
+                                "active"
+                            )
+                        ) {
+
+                            icon.classList.remove(
+                                "fa-bars"
+                            );
+
+                            icon.classList.add(
+                                "fa-xmark"
+                            );
+
+                        } else {
+
+                            icon.classList.remove(
+                                "fa-xmark"
+                            );
+
+                            icon.classList.add(
+                                "fa-bars"
+                            );
+
+                        }
+
                     }
 
-                });
-
-            });
-
-    }
+                }
+            );
 
 
-
-    /* =====================================================
-       EXPERIENCE ACCORDION
-    ====================================================== */
-    const experienceItems =
-        document.querySelectorAll(".experience-item");
+            const mobileLinks =
+                mobileMenu.querySelectorAll(
+                    "a"
+                );
 
 
-    experienceItems.forEach(item => {
+            mobileLinks.forEach(
+                (link) => {
 
-        const toggle =
-            item.querySelector(".experience-toggle");
+                    link.addEventListener(
+                        "click",
+                        () => {
 
-        const detail =
-            item.querySelector(".experience-detail");
+                            mobileMenu.classList.remove(
+                                "active"
+                            );
 
 
-        if (!toggle || !detail) {
-            return;
+                            const icon =
+                                menuToggle.querySelector(
+                                    "i"
+                                );
+
+
+                            if (icon) {
+
+                                icon.classList.remove(
+                                    "fa-xmark"
+                                );
+
+                                icon.classList.add(
+                                    "fa-bars"
+                                );
+
+                            }
+
+                        }
+                    );
+
+                }
+            );
+
         }
 
 
-        toggle.addEventListener("click", () => {
+        /* =====================================================
+           EXPERIENCE ACCORDION
+        ====================================================== */
 
-            const isActive =
-                item.classList.contains("active");
-
-
-            /* Close other experience items */
-            experienceItems.forEach(otherItem => {
-
-                if (otherItem === item) {
-                    return;
-                }
+        const experienceItems =
+            document.querySelectorAll(
+                ".experience-item"
+            );
 
 
-                otherItem.classList.remove("active");
+        experienceItems.forEach(
+            (item) => {
 
-
-                const otherToggle =
-                    otherItem.querySelector(
+                const button =
+                    item.querySelector(
                         ".experience-toggle"
                     );
 
 
-                const otherDetail =
-                    otherItem.querySelector(
-                        ".experience-detail"
-                    );
-
-
-                if (otherToggle) {
-                    otherToggle.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
+                if (!button) {
+                    return;
                 }
 
 
-                if (otherDetail) {
-                    otherDetail.style.maxHeight = null;
+                button.addEventListener(
+                    "click",
+                    () => {
+
+                        const isActive =
+                            item.classList.contains(
+                                "active"
+                            );
+
+
+                        /*
+                         * Close other experiences
+                         */
+
+                        experienceItems.forEach(
+                            (otherItem) => {
+
+                                if (
+                                    otherItem !==
+                                    item
+                                ) {
+
+                                    otherItem.classList.remove(
+                                        "active"
+                                    );
+
+
+                                    const otherButton =
+                                        otherItem.querySelector(
+                                            ".experience-toggle"
+                                        );
+
+
+                                    if (
+                                        otherButton
+                                    ) {
+
+                                        otherButton.setAttribute(
+                                            "aria-expanded",
+                                            "false"
+                                        );
+
+                                    }
+
+                                }
+
+                            }
+                        );
+
+
+                        /*
+                         * Toggle selected experience
+                         */
+
+                        if (isActive) {
+
+                            item.classList.remove(
+                                "active"
+                            );
+
+                            button.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                        } else {
+
+                            item.classList.add(
+                                "active"
+                            );
+
+                            button.setAttribute(
+                                "aria-expanded",
+                                "true"
+                            );
+
+                        }
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           IMAGE LIGHTBOX
+        ====================================================== */
+
+        const lightbox =
+            document.getElementById(
+                "lightbox"
+            );
+
+        const lightboxImage =
+            document.getElementById(
+                "lightbox-image"
+            );
+
+        const lightboxClose =
+            document.querySelector(
+                ".lightbox-close"
+            );
+
+        const zoomableImages =
+            document.querySelectorAll(
+                ".zoomable"
+            );
+
+
+        const openLightbox =
+            (image) => {
+
+                if (
+                    !lightbox ||
+                    !lightboxImage
+                ) {
+                    return;
                 }
 
-            });
+
+                lightboxImage.src =
+                    image.src;
+
+                lightboxImage.alt =
+                    image.alt || "";
 
 
-            /* Toggle current item */
-            if (isActive) {
+                lightbox.classList.add(
+                    "active"
+                );
 
-                item.classList.remove("active");
 
-                toggle.setAttribute(
-                    "aria-expanded",
+                lightbox.setAttribute(
+                    "aria-hidden",
                     "false"
                 );
 
-                detail.style.maxHeight = null;
 
-            }
+                document.body.classList.add(
+                    "lightbox-open"
+                );
 
-            else {
+            };
 
-                item.classList.add("active");
 
-                toggle.setAttribute(
-                    "aria-expanded",
+        const closeLightbox =
+            () => {
+
+                if (
+                    !lightbox ||
+                    !lightboxImage
+                ) {
+                    return;
+                }
+
+
+                lightbox.classList.remove(
+                    "active"
+                );
+
+
+                lightbox.setAttribute(
+                    "aria-hidden",
                     "true"
                 );
 
-                detail.style.maxHeight =
-                    detail.scrollHeight + "px";
 
-            }
-
-        });
-
-    });
-
-
-
-    /* =====================================================
-       PROJECT FILTER
-    ====================================================== */
-    const filterButtons =
-        document.querySelectorAll(".filter-btn");
-
-    const projectCards =
-        document.querySelectorAll(".project-card");
-
-
-    filterButtons.forEach(button => {
-
-        button.addEventListener("click", () => {
-
-            const filter =
-                button.dataset.filter;
-
-
-            /* Active button */
-            filterButtons.forEach(btn => {
-                btn.classList.remove("active");
-            });
-
-
-            button.classList.add("active");
-
-
-            /* Filter cards */
-            projectCards.forEach(card => {
-
-                const categories =
-                    card.dataset.category || "";
-
-
-                if (
-                    filter === "all" ||
-                    categories
-                        .split(" ")
-                        .includes(filter)
-                ) {
-
-                    card.classList.remove("hidden");
-
-                }
-
-                else {
-
-                    card.classList.add("hidden");
-
-                }
-
-            });
-
-        });
-
-    });
-
-
-
-    /* =====================================================
-       IMAGE LIGHTBOX
-    ====================================================== */
-    const lightbox =
-        document.getElementById("lightbox");
-
-    const lightboxImage =
-        document.getElementById("lightbox-image");
-
-    const lightboxClose =
-        document.querySelector(".lightbox-close");
-
-    const zoomableImages =
-        document.querySelectorAll(".zoomable");
-
-
-    function openLightbox(image) {
-
-        if (!lightbox || !lightboxImage) {
-            return;
-        }
-
-
-        lightboxImage.src = image.src;
-
-        lightboxImage.alt =
-            image.alt || "Portfolio image";
-
-
-        lightbox.classList.add("active");
-
-        lightbox.setAttribute(
-            "aria-hidden",
-            "false"
-        );
-
-
-        document.body.style.overflow =
-            "hidden";
-
-    }
-
-
-    function closeLightbox() {
-
-        if (!lightbox || !lightboxImage) {
-            return;
-        }
-
-
-        lightbox.classList.remove("active");
-
-        lightbox.setAttribute(
-            "aria-hidden",
-            "true"
-        );
-
-
-        lightboxImage.src = "";
-
-        document.body.style.overflow =
-            "";
-
-    }
-
-
-    zoomableImages.forEach(image => {
-
-        image.addEventListener("click", () => {
-
-            openLightbox(image);
-
-        });
-
-    });
-
-
-    if (lightboxClose) {
-
-        lightboxClose.addEventListener(
-            "click",
-            closeLightbox
-        );
-
-    }
-
-
-    if (lightbox) {
-
-        lightbox.addEventListener(
-            "click",
-            event => {
-
-                if (event.target === lightbox) {
-                    closeLightbox();
-                }
-
-            }
-        );
-
-    }
-
-
-    document.addEventListener(
-        "keydown",
-        event => {
-
-            if (
-                event.key === "Escape" &&
-                lightbox &&
-                lightbox.classList.contains(
-                    "active"
-                )
-            ) {
-
-                closeLightbox();
-
-            }
-
-        }
-    );
-
-
-
-    /* =====================================================
-       CLOSE MOBILE MENU ON RESIZE
-    ====================================================== */
-    window.addEventListener("resize", () => {
-
-        if (
-            window.innerWidth > 900 &&
-            mobileMenu
-        ) {
-
-            mobileMenu.classList.remove(
-                "active"
-            );
-
-
-            document.body.classList.remove(
-                "menu-open"
-            );
-
-
-            if (menuToggle) {
-
-                menuToggle.setAttribute(
-                    "aria-expanded",
-                    "false"
+                document.body.classList.remove(
+                    "lightbox-open"
                 );
 
 
-                const icon =
-                    menuToggle.querySelector("i");
+                setTimeout(
+                    () => {
+
+                        lightboxImage.src =
+                            "";
+
+                    },
+                    250
+                );
+
+            };
 
 
-                if (icon) {
+        zoomableImages.forEach(
+            (image) => {
 
-                    icon.className =
-                        "fa-solid fa-bars";
+                image.addEventListener(
+                    "click",
+                    () => {
+
+                        openLightbox(
+                            image
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+        if (lightboxClose) {
+
+            lightboxClose.addEventListener(
+                "click",
+                closeLightbox
+            );
+
+        }
+
+
+        if (lightbox) {
+
+            lightbox.addEventListener(
+                "click",
+                (event) => {
+
+                    if (
+                        event.target ===
+                        lightbox
+                    ) {
+
+                        closeLightbox();
+
+                    }
+
+                }
+            );
+
+        }
+
+
+        document.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (
+                    event.key ===
+                    "Escape"
+                ) {
+
+                    closeLightbox();
 
                 }
 
             }
+        );
+
+
+        /* =====================================================
+           SMOOTH ANCHOR NAVIGATION
+        ====================================================== */
+
+        const anchorLinks =
+            document.querySelectorAll(
+                'a[href^="#"]'
+            );
+
+
+        anchorLinks.forEach(
+            (link) => {
+
+                link.addEventListener(
+                    "click",
+                    (event) => {
+
+                        const targetId =
+                            link.getAttribute(
+                                "href"
+                            );
+
+
+                        if (
+                            !targetId ||
+                            targetId === "#"
+                        ) {
+                            return;
+                        }
+
+
+                        const target =
+                            document.querySelector(
+                                targetId
+                            );
+
+
+                        if (!target) {
+                            return;
+                        }
+
+
+                        event.preventDefault();
+
+
+                        target.scrollIntoView(
+                            {
+                                behavior:
+                                    "smooth",
+
+                                block:
+                                    "start"
+                            }
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+
+        /* =====================================================
+           SCROLL REVEAL
+        ====================================================== */
+
+        const revealElements =
+            document.querySelectorAll(
+                [
+                    ".section-heading",
+                    ".education-card",
+                    ".experience-item",
+                    ".project-card",
+                    ".skill-card",
+                    ".contact-card",
+                    ".about-highlight"
+                ].join(",")
+            );
+
+
+        revealElements.forEach(
+            (element) => {
+
+                element.classList.add(
+                    "reveal"
+                );
+
+            }
+        );
+
+
+        if (
+            "IntersectionObserver"
+            in window
+        ) {
+
+            const observer =
+                new IntersectionObserver(
+
+                    (
+                        entries,
+                        observerInstance
+                    ) => {
+
+                        entries.forEach(
+                            (entry) => {
+
+                                if (
+                                    entry.isIntersecting
+                                ) {
+
+                                    entry.target
+                                        .classList
+                                        .add(
+                                            "visible"
+                                        );
+
+
+                                    observerInstance
+                                        .unobserve(
+                                            entry.target
+                                        );
+
+                                }
+
+                            }
+                        );
+
+                    },
+
+                    {
+                        threshold: 0.10,
+                        rootMargin:
+                            "0px 0px -40px 0px"
+                    }
+
+                );
+
+
+            revealElements.forEach(
+                (element) => {
+
+                    observer.observe(
+                        element
+                    );
+
+                }
+            );
+
+        } else {
+
+            revealElements.forEach(
+                (element) => {
+
+                    element.classList.add(
+                        "visible"
+                    );
+
+                }
+            );
 
         }
 
-    });
 
-});
+        /* =====================================================
+           IMAGE ERROR FALLBACK
+        ====================================================== */
+
+        const allImages =
+            document.querySelectorAll(
+                "img"
+            );
+
+
+        allImages.forEach(
+            (image) => {
+
+                image.addEventListener(
+                    "error",
+                    () => {
+
+                        console.warn(
+                            "Image failed to load:",
+                            image.getAttribute(
+                                "src"
+                            )
+                        );
+
+
+                        image.classList.add(
+                            "image-error"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    }
+);
