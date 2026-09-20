@@ -1,1864 +1,486 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- =====================================================
+     PROJECTS
+====================================================== -->
+<section
+    id="projects"
+    class="section section-light"
+>
 
-<head>
-    <meta charset="UTF-8">
+    <div class="container">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="description"
-        content="Portfolio of Khurotaayun Pesona Subagja - Data Analytics, Market Insight, Business Intelligence, Automation, and Machine Learning."
-    >
-
-    <title>Khurotaayun | Portfolio</title>
-
-    <!-- GOOGLE FONT -->
-    <link
-        rel="preconnect"
-        href="https://fonts.googleapis.com"
-    >
-
-    <link
-        rel="preconnect"
-        href="https://fonts.gstatic.com"
-        crossorigin
-    >
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
-
-    <!-- FONT AWESOME -->
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    >
-
-    <!-- CSS -->
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-</head>
+        <p class="section-label">
+            PORTFOLIO
+        </p>
 
 
-<body>
-
-    <!-- =====================================================
-         NAVBAR
-    ====================================================== -->
-    <nav class="navbar">
-
-        <div class="container nav-container">
-
-            <a
-                href="#home"
-                class="logo"
-            >
-                Khurotaayun<span>.</span>
-            </a>
+        <h2 class="section-title">
+            Selected Projects
+        </h2>
 
 
-            <div class="nav-links">
+        <p class="section-description">
+            Explore projects across data analytics,
+            machine learning, computer vision,
+            customer insight, and automation.
+        </p>
 
-                <a href="#about">
-                    About
-                </a>
 
-                <a href="#education">
-                    Education
-                </a>
 
-                <a href="#experience">
-                    Experience
-                </a>
-
-                <a href="#projects">
-                    Projects
-                </a>
-
-                <a href="#skills">
-                    Skills
-                </a>
-
-                <a href="#contact">
-                    Contact
-                </a>
-
-            </div>
-
+        <!-- =================================================
+             PROJECT FILTER
+        ================================================== -->
+        <div class="project-filter">
 
             <button
-                class="menu-toggle"
                 type="button"
-                aria-label="Open navigation"
-                aria-expanded="false"
+                class="filter-btn active"
+                data-filter="all"
             >
-                <i class="fa-solid fa-bars"></i>
+                All Projects
+            </button>
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="analytics"
+            >
+                Data Analytics
+            </button>
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="machine-learning"
+            >
+                Machine Learning
+            </button>
+
+            <button
+                type="button"
+                class="filter-btn"
+                data-filter="automation"
+            >
+                Automation
             </button>
 
         </div>
 
 
-        <div class="mobile-menu">
 
-            <a href="#about">
-                About
-            </a>
-
-            <a href="#education">
-                Education
-            </a>
-
-            <a href="#experience">
-                Experience
-            </a>
-
-            <a href="#projects">
-                Projects
-            </a>
-
-            <a href="#skills">
-                Skills
-            </a>
-
-            <a href="#contact">
-                Contact
-            </a>
-
-        </div>
-
-    </nav>
+        <div class="project-grid">
 
 
+            <!-- =================================================
+                 PROJECT 01
+                 MARKET INSIGHT DASHBOARD
+            ================================================== -->
+            <article
+                class="project-card"
+                data-category="analytics"
+            >
 
-    <!-- =====================================================
-         HERO
-    ====================================================== -->
-    <section
-        id="home"
-        class="hero"
-    >
-
-        <div class="container hero-layout">
-
-            <div class="hero-content">
-
-                <p class="hero-small">
-                    Hi, I'm
-                </p>
-
-
-                <h1>
-                    Khurotaayun Pesona Subagja
-                </h1>
-
-
-                <h2>
-                    Data Analytics • Market Insight • Business Intelligence
-                </h2>
-
-
-                <p class="hero-description">
-                    Exploring problems through analytical and business
-                    perspectives to build practical data solutions
-                    and support better decisions.
-                </p>
-
-
-                <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="btn btn-primary"
-                    >
-                        View Projects
-                    </a>
-
-
-                    <a
-                        href="files/CV_KHUROTAAYUN.pdf"
-                        class="btn btn-secondary"
-                        download
-                    >
-                        <i class="fa-solid fa-download"></i>
-
-                        Download CV
-                    </a>
-
-                </div>
-
-
-                <div class="hero-focus">
-
-                    <span>
-                        <i class="fa-solid fa-chart-line"></i>
-                        Analytics
-                    </span>
-
-                    <span>
-                        <i class="fa-solid fa-gears"></i>
-                        Automation
-                    </span>
-
-                    <span>
-                        <i class="fa-solid fa-brain"></i>
-                        Machine Learning
-                    </span>
-
-                </div>
-
-            </div>
-
-
-            <div class="hero-photo-wrapper">
-
-                <div class="hero-photo">
+                <!-- ONE COVER IMAGE -->
+                <div class="project-image">
 
                     <img
-                        src="assets/profile.jpg"
-                        alt="Khurotaayun Pesona Subagja"
+                        class="zoomable"
+                        src="assets/projects/market-insight-dashboard/dashboard-mi.png"
+                        alt="Market Insight Dashboard"
                     >
 
                 </div>
 
-            </div>
 
-        </div>
+                <div class="project-content">
 
-    </section>
+                    <div class="project-top">
 
+                        <span class="project-category">
+                            Data Analytics • Business Intelligence
+                        </span>
 
-
-    <!-- =====================================================
-         ABOUT
-    ====================================================== -->
-    <section
-        id="about"
-        class="section"
-    >
-
-        <div class="container">
-
-            <p class="section-label">
-                ABOUT ME
-            </p>
-
-
-            <h2 class="section-title">
-                A little bit about me
-            </h2>
-
-
-            <div class="about-layout">
-
-                <div class="about-copy">
-
-                    <p class="about-highlight">
-                        I enjoy exploring problems from both analytical
-                        and business perspectives, then turning data into
-                        insights that support better decisions.
-                    </p>
-
-
-                    <p class="about-text">
-                        A recent Business Statistics graduate from
-                        Institut Teknologi Sepuluh Nopember (ITS),
-                        with hands-on experience in data analytics,
-                        market insight, dashboard development,
-                        and workflow automation.
-                    </p>
-
-
-                    <p class="about-text">
-                        I continuously build self-initiated projects
-                        to explore machine learning, NLP, automation,
-                        and other data-driven solutions.
-                    </p>
-
-                </div>
-
-
-                <div class="about-capabilities">
-
-
-                    <div class="capability-card">
-
-                        <div class="capability-icon">
-                            <i class="fa-solid fa-chart-column"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Data Analytics
-                            </h3>
-
-                            <p>
-                                Statistical analysis, visualization,
-                                exploration, and reporting.
-                            </p>
-
-                        </div>
+                        <span class="project-number">
+                            01
+                        </span>
 
                     </div>
-
-
-                    <div class="capability-card">
-
-                        <div class="capability-icon">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Market Insight
-                            </h3>
-
-                            <p>
-                                Consumer research, competitor analysis,
-                                surveys, and business insights.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="capability-card">
-
-                        <div class="capability-icon">
-                            <i class="fa-solid fa-chart-pie"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Business Intelligence
-                            </h3>
-
-                            <p>
-                                Dashboards and reporting systems
-                                designed to support decisions.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="capability-card">
-
-                        <div class="capability-icon">
-                            <i class="fa-solid fa-robot"></i>
-                        </div>
-
-                        <div>
-
-                            <h3>
-                                Machine Learning
-                            </h3>
-
-                            <p>
-                                Predictive modeling, NLP,
-                                and computer vision experimentation.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         EDUCATION
-    ====================================================== -->
-    <section
-        id="education"
-        class="section section-light"
-    >
-
-        <div class="container">
-
-            <p class="section-label">
-                EDUCATION
-            </p>
-
-
-            <h2 class="section-title">
-                Academic Background
-            </h2>
-
-
-            <div class="education-card">
-
-                <div class="education-icon">
-
-                    <i class="fa-solid fa-graduation-cap"></i>
-
-                </div>
-
-
-                <div class="education-content">
-
-                    <span class="education-degree">
-                        Bachelor's Degree
-                    </span>
 
 
                     <h3>
-                        Business Statistics
+                        Market Insight Dashboard
                     </h3>
 
 
-                    <p class="education-university">
-                        Institut Teknologi Sepuluh Nopember (ITS)
+                    <p>
+                        Interactive survey analytics dashboard
+                        developed to automate survey data processing,
+                        filtering, routing, variable analysis,
+                        crosstab analysis, and reporting.
                     </p>
 
 
-                    <div class="education-meta">
+                    <div class="tools">
 
-                        <span>
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>Pandas</span>
+                        <span>Survey Analytics</span>
 
-                            <i class="fa-solid fa-location-dot"></i>
-
-                            Surabaya, Indonesia
-
-                        </span>
+                    </div>
 
 
-                        <span>
+                    <div class="project-links">
 
-                            <i class="fa-solid fa-star"></i>
+                        <a
+                            href="https://surveydashboard-mi.streamlit.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn"
+                        >
 
-                            GPA 3.38 / 4.00
+                            Live Dashboard
 
-                        </span>
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
 
                     </div>
 
                 </div>
 
-            </div>
-
-        </div>
-
-    </section>
+            </article>
 
 
 
-    <!-- =====================================================
-         EXPERIENCE
-    ====================================================== -->
-    <section
-        id="experience"
-        class="section"
-    >
+            <!-- =================================================
+                 PROJECT 02
+                 CUSTOMER CHURN
+            ================================================== -->
+            <article
+                class="project-card"
+                data-category="machine-learning analytics"
+            >
 
-        <div class="container">
+                <!-- ONE COVER IMAGE -->
+                <div class="project-image">
 
-            <p class="section-label">
-                EXPERIENCE
-            </p>
-
-
-            <h2 class="section-title">
-                Work Experience
-            </h2>
-
-
-            <p class="section-description">
-                Explore my responsibilities, key outputs,
-                and work documentation.
-            </p>
-
-
-            <div class="experience-list">
-
-
-                <!-- MARKET INSIGHT OFFICER -->
-                <article class="experience-item">
-
-                    <button
-                        class="experience-toggle"
-                        type="button"
-                        aria-expanded="false"
+                    <img
+                        class="zoomable"
+                        src="assets/projects/predictive-churn/predictive-churn.png"
+                        alt="Customer Churn Prediction Dashboard"
                     >
 
-                        <div class="experience-main">
-
-                            <span class="experience-type">
-                                Professional Experience
-                            </span>
-
-                            <h3>
-                                Market Insight Officer
-                            </h3>
-
-                            <p>
-                                PT. Lion Express — Lion Parcel
-                            </p>
-
-                        </div>
-
-
-                        <div class="experience-right">
-
-                            <span class="experience-year">
-                                Jul 2026 — Present
-                            </span>
-
-                            <span class="experience-chevron">
-                                +
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="experience-detail">
-
-                        <div class="experience-detail-inner">
-
-                            <div class="experience-detail-grid">
-
-                                <div class="experience-information">
-
-                                    <h4>
-                                        What I Did
-                                    </h4>
-
-
-                                    <ul>
-
-                                        <li>
-                                            Developed an automated data processing
-                                            dashboard to accelerate analysis and
-                                            reporting workflows.
-                                        </li>
-
-                                        <li>
-                                            Conducted strategic competitor and
-                                            market research to identify business
-                                            opportunities and performance gaps.
-                                        </li>
-
-                                        <li>
-                                            Managed end-to-end ad-hoc market
-                                            research for brand events and
-                                            customer analysis.
-                                        </li>
-
-                                        <li>
-                                            Analyzed customer behavior using
-                                            survey and geographic data.
-                                        </li>
-
-                                        <li>
-                                            Conducted geographic proximity
-                                            analysis between respondents
-                                            and agent locations.
-                                        </li>
-
-                                    </ul>
-
-
-                                    <h4>
-                                        Key Outputs
-                                    </h4>
-
-
-                                    <div class="output-list">
-
-                                        <span>
-                                            Automated Data Processing Dashboard
-                                        </span>
-
-                                        <span>
-                                            Competitor Research
-                                        </span>
-
-                                        <span>
-                                            Consumer Behavior Analysis
-                                        </span>
-
-                                        <span>
-                                            Event Evaluation
-                                        </span>
-
-                                        <span>
-                                            Geographic Market Analysis
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="experience-gallery">
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/lion-parcel/officer-1.jpg"
-                                        alt="Lion Parcel activity"
-                                    >
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/lion-parcel/officer-2.jpg"
-                                        alt="Lion Parcel work documentation"
-                                    >
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/lion-parcel/officer-3.jpg"
-                                        alt="Lion Parcel activity"
-                                    >
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- MARKET INSIGHT INTERN -->
-                <article class="experience-item">
-
-                    <button
-                        class="experience-toggle"
-                        type="button"
-                        aria-expanded="false"
-                    >
-
-                        <div class="experience-main">
-
-                            <span class="experience-type">
-                                Internship
-                            </span>
-
-                            <h3>
-                                Market Insight Intern
-                            </h3>
-
-                            <p>
-                                PT. Lion Express — Lion Parcel
-                            </p>
-
-                        </div>
-
-
-                        <div class="experience-right">
-
-                            <span class="experience-year">
-                                Mar 2026 — Jul 2026
-                            </span>
-
-                            <span class="experience-chevron">
-                                +
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="experience-detail">
-
-                        <div class="experience-detail-inner">
-
-                            <div class="experience-detail-grid">
-
-                                <div class="experience-information">
-
-                                    <h4>
-                                        What I Did
-                                    </h4>
-
-
-                                    <ul>
-
-                                        <li>
-                                            Analyzed quarterly Customer Satisfaction
-                                            data using Python.
-                                        </li>
-
-                                        <li>
-                                            Managed end-to-end research to evaluate
-                                            a national agent competition program.
-                                        </li>
-
-                                        <li>
-                                            Analyzed qualitative feedback from
-                                            customers, agents, and internal teams.
-                                        </li>
-
-                                        <li>
-                                            Reviewed Brand Health Tracking reports
-                                            in collaboration with external vendors.
-                                        </li>
-
-                                    </ul>
-
-
-                                    <h4>
-                                        Key Outputs
-                                    </h4>
-
-
-                                    <div class="output-list">
-
-                                        <span>
-                                            CSAT Analysis
-                                        </span>
-
-                                        <span>
-                                            Agent Competition Research
-                                        </span>
-
-                                        <span>
-                                            Qualitative Feedback Analysis
-                                        </span>
-
-                                        <span>
-                                            Brand Health Tracking Review
-                                        </span>
-
-                                        <span>
-                                            Business Insight Report
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="experience-gallery">
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/lion-parcel/lionparcel1.jpeg"
-                                        alt="Lion Parcel internship"
-                                    >
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/lion-parcel/lionparcel2.jpeg"
-                                        alt="Lion Parcel internship activity"
-                                    >
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/lion-parcel/lionparcel3.jpeg"
-                                        alt="Lion Parcel internship documentation"
-                                    >
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- TEACHING ASSISTANT -->
-                <article class="experience-item">
-
-                    <button
-                        class="experience-toggle"
-                        type="button"
-                        aria-expanded="false"
-                    >
-
-                        <div class="experience-main">
-
-                            <span class="experience-type">
-                                Academic Experience
-                            </span>
-
-                            <h3>
-                                Lecturer Assistant — Database Management System
-                            </h3>
-
-                            <p>
-                                Institut Teknologi Sepuluh Nopember
-                            </p>
-
-                        </div>
-
-
-                        <div class="experience-right">
-
-                            <span class="experience-year">
-                                Aug 2024 — Dec 2024
-                            </span>
-
-                            <span class="experience-chevron">
-                                +
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="experience-detail">
-
-                        <div class="experience-detail-inner">
-
-                            <div class="experience-single">
-
-                                <div class="experience-information">
-
-                                    <h4>
-                                        What I Did
-                                    </h4>
-
-
-                                    <ul>
-
-                                        <li>
-                                            Mentored students through
-                                            database practicum sessions
-                                            and final projects.
-                                        </li>
-
-                                        <li>
-                                            Guided database implementation
-                                            using DBeaver and PostgreSQL.
-                                        </li>
-
-                                        <li>
-                                            Evaluated assignments and
-                                            monitored student progress.
-                                        </li>
-
-                                        <li>
-                                            Supported SQL queries,
-                                            database design, and troubleshooting.
-                                        </li>
-
-                                    </ul>
-
-
-                                    <h4>
-                                        Key Outputs
-                                    </h4>
-
-
-                                    <div class="output-list">
-
-                                        <span>
-                                            Student Mentoring
-                                        </span>
-
-                                        <span>
-                                            Database Practicum
-                                        </span>
-
-                                        <span>
-                                            Assignment Evaluation
-                                        </span>
-
-                                        <span>
-                                            SQL & Database Support
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- DISBUDPAR -->
-                <article class="experience-item">
-
-                    <button
-                        class="experience-toggle"
-                        type="button"
-                        aria-expanded="false"
-                    >
-
-                        <div class="experience-main">
-
-                            <span class="experience-type">
-                                Internship
-                            </span>
-
-                            <h3>
-                                Marketing Division Intern
-                            </h3>
-
-                            <p>
-                                Dinas Kebudayaan & Pariwisata Jawa Timur
-                            </p>
-
-                        </div>
-
-
-                        <div class="experience-right">
-
-                            <span class="experience-year">
-                                Jan 2025 — Feb 2025
-                            </span>
-
-                            <span class="experience-chevron">
-                                +
-                            </span>
-
-                        </div>
-
-                    </button>
-
-
-                    <div class="experience-detail">
-
-                        <div class="experience-detail-inner">
-
-                            <div class="experience-detail-grid">
-
-                                <div class="experience-information">
-
-                                    <h4>
-                                        What I Did
-                                    </h4>
-
-
-                                    <ul>
-
-                                        <li>
-                                            Designed content for the Travel Pattern
-                                            Mojokerto tourism brochure.
-                                        </li>
-
-                                        <li>
-                                            Analyzed and visualized East Java
-                                            tourism data using Looker Studio.
-                                        </li>
-
-                                        <li>
-                                            Supported tourism activities
-                                            and participant engagement.
-                                        </li>
-
-                                        <li>
-                                            Managed and validated cruise ship
-                                            arrival data at Tanjung Perak Port.
-                                        </li>
-
-                                    </ul>
-
-
-                                    <h4>
-                                        Key Outputs
-                                    </h4>
-
-
-                                    <div class="output-list">
-
-                                        <span>
-                                            Tourism Dashboard
-                                        </span>
-
-                                        <span>
-                                            Travel Pattern Brochure
-                                        </span>
-
-                                        <span>
-                                            Tourism Data Analysis
-                                        </span>
-
-                                        <span>
-                                            Cruise Ship Database
-                                        </span>
-
-                                    </div>
-
-                                </div>
-
-
-                                <div class="experience-gallery">
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/disbudpar/disbudpar-1.jpg"
-                                        alt="Disbudpar internship"
-                                    >
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/disbudpar/disbudpar-2.jpg"
-                                        alt="Disbudpar activity"
-                                    >
-
-                                    <img
-                                        class="zoomable"
-                                        src="assets/experience/disbudpar/disbudpar-3.jpg"
-                                        alt="Disbudpar documentation"
-                                    >
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         PROJECTS
-    ====================================================== -->
-    <section
-        id="projects"
-        class="section section-light"
-    >
-
-        <div class="container">
-
-            <p class="section-label">
-                PORTFOLIO
-            </p>
-
-
-            <h2 class="section-title">
-                Selected Projects
-            </h2>
-
-
-            <p class="section-description">
-                Explore projects across data analytics,
-                machine learning, and automation.
-            </p>
-
-
-
-            <!-- FILTER -->
-            <div class="project-filter">
-
-                <button
-                    type="button"
-                    class="filter-btn active"
-                    data-filter="all"
-                >
-                    All Projects
-                </button>
-
-                <button
-                    type="button"
-                    class="filter-btn"
-                    data-filter="analytics"
-                >
-                    Data Analytics
-                </button>
-
-                <button
-                    type="button"
-                    class="filter-btn"
-                    data-filter="machine-learning"
-                >
-                    Machine Learning
-                </button>
-
-                <button
-                    type="button"
-                    class="filter-btn"
-                    data-filter="automation"
-                >
-                    Automation
-                </button>
-
-            </div>
-
-
-
-            <div class="project-grid">
-
-
-                <!-- PROJECT 01 -->
-                <article
-                    class="project-card"
-                    data-category="analytics"
-                >
-
-                    <div class="project-image">
-
-                        <img
-                            class="zoomable"
-                            src="assets/projects/market-insight-dashboard/dashboard-mi.png"
-                            alt="Market Insight Dashboard"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-
-                            <span class="project-category">
-                                Data Analytics • Business Intelligence
-                            </span>
-
-                            <span class="project-number">
-                                01
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Market Insight Dashboard
-                        </h3>
-
-
-                        <p>
-                            Interactive survey analytics dashboard
-                            for processing, filtering, analyzing,
-                            and visualizing customer and market research data.
-                        </p>
-
-
-                        <div class="tools">
-
-                            <span>Python</span>
-                            <span>Streamlit</span>
-                            <span>Pandas</span>
-                            <span>Altair</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://dashboard-mi.streamlit.app"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-btn"
-                            >
-                                Live Demo
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 02 -->
-                <article
-                    class="project-card"
-                    data-category="machine-learning analytics"
-                >
-
-                    <div class="project-image">
-
-                        <img
-                            class="zoomable"
-                            src="assets/projects/predictive-churn/predictive-churn.png"
-                            alt="Customer Churn Prediction"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-
-                            <span class="project-category">
-                                Machine Learning • Predictive Analytics
-                            </span>
-
-                            <span class="project-number">
-                                02
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Customer Churn Prediction Dashboard
-                        </h3>
-
-
-                        <p>
-                            Machine learning dashboard developed to analyze
-                            customer churn and estimate churn probability
-                            using gradient boosting models.
-                        </p>
-
-
-                        <div class="tools">
-
-                            <span>Python</span>
-                            <span>XGBoost</span>
-                            <span>LightGBM</span>
-                            <span>Streamlit</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://predictive-churn-pxbk7bedqtveruibc76frv.streamlit.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-btn"
-                            >
-                                Live Demo
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 03 -->
-                <article
-                    class="project-card"
-                    data-category="machine-learning"
-                >
-
-                    <div class="drowsiness-preview">
-
-                        <div class="drowsiness-image">
-
-                            <img
-                                class="zoomable"
-                                src="assets/projects/drowsiness-detection/awake.png"
-                                alt="Awake Detection"
-                            >
-
-                            <span class="image-label">
-                                AWAKE
-                            </span>
-
-                        </div>
-
-
-                        <div class="drowsiness-image">
-
-                            <img
-                                class="zoomable"
-                                src="assets/projects/drowsiness-detection/drowsy.png"
-                                alt="Drowsiness Detection"
-                            >
-
-                            <span class="image-label">
-                                DROWSY
-                            </span>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="evaluation-preview">
-
-                        <p>
-                            Model Evaluation
-                        </p>
-
-                        <img
-                            class="zoomable"
-                            src="assets/projects/drowsiness-detection/evaluation.png"
-                            alt="Drowsiness model evaluation"
-                        >
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-
-                            <span class="project-category">
-                                Machine Learning • Computer Vision
-                            </span>
-
-                            <span class="project-number">
-                                03
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Drowsiness Detection System
-                        </h3>
-
-
-                        <p>
-                            Computer vision application developed to
-                            detect whether a person is awake or showing
-                            signs of drowsiness.
-                        </p>
-
-
-                        <div class="tools">
-
-                            <span>Python</span>
-                            <span>YOLO</span>
-                            <span>Computer Vision</span>
-                            <span>Streamlit</span>
-
-                        </div>
-
-
-                        <div class="project-links">
-
-                            <a
-                                href="https://drowsinessdetection28.streamlit.app/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                class="project-btn"
-                            >
-                                Live Demo
-
-                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                            </a>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 04 -->
-                <article
-                    class="project-card"
-                    data-category="analytics"
-                >
-
-                    <div class="project-video">
-
-                        <video
-                            controls
-                            preload="metadata"
-                            poster="assets/projects/mills-review-analysis/mills-insight-1.jpg"
-                        >
-
-                            <source
-                                src="assets/projects/mills-review-analysis/mills-scrapping.mp4"
-                                type="video/mp4"
-                            >
-
-                        </video>
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-
-                            <span class="project-category">
-                                Data Analytics • NLP • Web Scraping
-                            </span>
-
-                            <span class="project-number">
-                                04
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            Customer Review Insight — Mills Running Shoes
-                        </h3>
-
-
-                        <p>
-                            Customer review analysis designed to uncover
-                            sentiment, recurring feedback,
-                            and product perceptions from marketplace data.
-                        </p>
-
-
-                        <div class="mini-gallery">
-
-                            <img
-                                class="zoomable"
-                                src="assets/projects/mills-review-analysis/mills-insight-1.jpg"
-                                alt="Mills customer insight"
-                            >
-
-                            <img
-                                class="zoomable"
-                                src="assets/projects/mills-review-analysis/mills-insight-2.jpg"
-                                alt="Mills review analysis"
-                            >
-
-                        </div>
-
-
-                        <div class="tools">
-
-                            <span>Python</span>
-                            <span>Selenium</span>
-                            <span>BeautifulSoup</span>
-                            <span>Pandas</span>
-                            <span>Text Analysis</span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- PROJECT 05 -->
-                <article
-                    class="project-card"
-                    data-category="automation"
-                >
-
-                    <div class="project-video">
-
-                        <video
-                            controls
-                            preload="metadata"
-                            poster="assets/projects/chatbot-n8n/workflow-chatbot.png"
-                        >
-
-                            <source
-                                src="assets/projects/chatbot-n8n/demo-chatbot.mp4"
-                                type="video/mp4"
-                            >
-
-                        </video>
-
-                    </div>
-
-
-                    <div class="project-content">
-
-                        <div class="project-top">
-
-                            <span class="project-category">
-                                Automation • AI Workflow
-                            </span>
-
-                            <span class="project-number">
-                                05
-                            </span>
-
-                        </div>
-
-
-                        <h3>
-                            AI Chatbot Automation with n8n
-                        </h3>
-
-
-                        <p>
-                            Automated chatbot workflow demonstrating
-                            process automation, AI integration,
-                            and conversational interaction.
-                        </p>
-
-
-                        <div class="mini-gallery single-image">
-
-                            <img
-                                class="zoomable"
-                                src="assets/projects/chatbot-n8n/workflow-chatbot.png"
-                                alt="n8n chatbot workflow"
-                            >
-
-                        </div>
-
-
-                        <div class="tools">
-
-                            <span>n8n</span>
-                            <span>Automation</span>
-                            <span>AI Chatbot</span>
-                            <span>Workflow</span>
-
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         SKILLS
-    ====================================================== -->
-    <section
-        id="skills"
-        class="section"
-    >
-
-        <div class="container">
-
-            <p class="section-label">
-                SKILLS
-            </p>
-
-
-            <h2 class="section-title">
-                Tools & Technologies
-            </h2>
-
-
-            <p class="section-description">
-                Technologies and analytical tools used across
-                professional work and self-initiated projects.
-            </p>
-
-
-            <div class="skill-grid">
-
-
-                <div class="skill-card">
-                    <i class="fa-brands fa-python"></i>
-                    <span>Python</span>
                 </div>
 
 
-                <div class="skill-card">
-                    <i class="fa-solid fa-database"></i>
-                    <span>SQL</span>
-                </div>
+                <div class="project-content">
 
+                    <div class="project-top">
 
-                <div class="skill-card">
-                    <i class="fa-solid fa-file-excel"></i>
-                    <span>Excel</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-chart-column"></i>
-                    <span>Power BI</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-chart-pie"></i>
-                    <span>Tableau</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <span>Looker Studio</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <span>Streamlit</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-brain"></i>
-                    <span>Machine Learning</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-language"></i>
-                    <span>NLP</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-eye"></i>
-                    <span>Computer Vision</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-robot"></i>
-                    <span>n8n Automation</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Web Scraping</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-magnifying-glass-chart"></i>
-                    <span>Market Research</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-square-poll-vertical"></i>
-                    <span>Survey Analytics</span>
-                </div>
-
-
-                <div class="skill-card">
-                    <i class="fa-solid fa-chart-simple"></i>
-                    <span>Statistics</span>
-                </div>
-
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         CONTACT
-    ====================================================== -->
-    <section
-        id="contact"
-        class="section contact-section"
-    >
-
-        <div class="container">
-
-            <p class="section-label">
-                CONTACT
-            </p>
-
-
-            <h2 class="section-title">
-                Let's Connect
-            </h2>
-
-
-            <p class="contact-description">
-                Feel free to reach out or explore more of my work.
-            </p>
-
-
-            <div class="contact-grid">
-
-
-                <a
-                    href="https://www.linkedin.com/in/khurotaayunpesonasubagja"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contact-card"
-                >
-
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </div>
-
-
-                    <div class="contact-info">
-
-                        <span class="contact-platform">
-                            LinkedIn
+                        <span class="project-category">
+                            Machine Learning • Predictive Analytics
                         </span>
 
-                        <strong>
-                            khurotaayunpesonasubagja
-                        </strong>
-
-                    </div>
-
-
-                    <span class="contact-arrow">
-                        ↗
-                    </span>
-
-                </a>
-
-
-
-                <a
-                    href="https://github.com/khurotaayunsubagja"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="contact-card"
-                >
-
-                    <div class="contact-icon">
-                        <i class="fa-brands fa-github"></i>
-                    </div>
-
-
-                    <div class="contact-info">
-
-                        <span class="contact-platform">
-                            GitHub
+                        <span class="project-number">
+                            02
                         </span>
 
-                        <strong>
-                            khurotaayunsubagja
-                        </strong>
+                    </div>
+
+
+                    <h3>
+                        Customer Churn Prediction Dashboard
+                    </h3>
+
+
+                    <p>
+                        Machine learning dashboard developed
+                        to analyze customer churn patterns
+                        and estimate churn probability
+                        using gradient boosting models.
+                    </p>
+
+
+                    <div class="tools">
+
+                        <span>Python</span>
+                        <span>XGBoost</span>
+                        <span>LightGBM</span>
+                        <span>Streamlit</span>
 
                     </div>
 
 
-                    <span class="contact-arrow">
-                        ↗
-                    </span>
+                    <div class="project-links">
 
-                </a>
+                        <a
+                            href="https://predictive-churn-pxbk7bedqtveruibc76frv.streamlit.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn"
+                        >
 
+                            Live Demo
 
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                <a
-                    href="mailto:skhurotaayun@gmail.com"
-                    class="contact-card"
-                >
+                        </a>
 
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope"></i>
                     </div>
 
+                </div>
 
-                    <div class="contact-info">
+            </article>
 
-                        <span class="contact-platform">
-                            Email
+
+
+            <!-- =================================================
+                 PROJECT 03
+                 DROWSINESS DETECTION
+            ================================================== -->
+            <article
+                class="project-card"
+                data-category="machine-learning"
+            >
+
+                <!-- ONE COVER IMAGE -->
+                <div class="project-image">
+
+                    <img
+                        class="zoomable"
+                        src="assets/projects/drowsiness-detection/awake.png"
+                        alt="Drowsiness Detection System"
+                    >
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-top">
+
+                        <span class="project-category">
+                            Machine Learning • Computer Vision
                         </span>
 
-                        <strong>
-                            skhurotaayun@gmail.com
-                        </strong>
+                        <span class="project-number">
+                            03
+                        </span>
 
                     </div>
 
 
-                    <span class="contact-arrow">
-                        ↗
-                    </span>
-
-                </a>
+                    <h3>
+                        Drowsiness Detection System
+                    </h3>
 
 
-            </div>
+                    <p>
+                        Computer vision application developed
+                        to detect whether a person is awake
+                        or showing signs of drowsiness
+                        using an object detection model.
+                    </p>
+
+
+                    <div class="tools">
+
+                        <span>Python</span>
+                        <span>YOLO</span>
+                        <span>Computer Vision</span>
+                        <span>Streamlit</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://drowsinessdetection28.streamlit.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn"
+                        >
+
+                            Live Demo
+
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 04
+                 MILLS CUSTOMER REVIEW
+            ================================================== -->
+            <article
+                class="project-card"
+                data-category="analytics"
+            >
+
+                <!-- ONE COVER IMAGE -->
+                <div class="project-image">
+
+                    <img
+                        class="zoomable"
+                        src="assets/projects/mills-review-analysis/mills-insight-1.jpeg"
+                        alt="Mills Running Shoes Customer Review Insight"
+                    >
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-top">
+
+                        <span class="project-category">
+                            Data Analytics • NLP • Web Scraping
+                        </span>
+
+                        <span class="project-number">
+                            04
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Customer Review Insight — Mills Running Shoes
+                    </h3>
+
+
+                    <p>
+                        Marketplace customer reviews were collected
+                        and analyzed to identify sentiment,
+                        recurring feedback, and product perceptions
+                        that can support product and business decisions.
+                    </p>
+
+
+                    <div class="tools">
+
+                        <span>Python</span>
+                        <span>Selenium</span>
+                        <span>Web Scraping</span>
+                        <span>Text Analysis</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://drive.google.com/file/d/15pXuWEWrAtKgY67UWptYJaV7IWe1cTzJ/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn"
+                        >
+
+                            Watch Scraping Demo
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT 05
+                 AI CHATBOT
+            ================================================== -->
+            <article
+                class="project-card"
+                data-category="automation"
+            >
+
+                <!-- ONE COVER IMAGE -->
+                <div class="project-image">
+
+                    <img
+                        class="zoomable"
+                        src="assets/projects/chatbot-n8n/workflow-chatbot.jpeg"
+                        alt="AI Chatbot Automation with n8n"
+                    >
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-top">
+
+                        <span class="project-category">
+                            Automation • AI Workflow
+                        </span>
+
+                        <span class="project-number">
+                            05
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        AI Chatbot Automation with n8n
+                    </h3>
+
+
+                    <p>
+                        Automated chatbot workflow developed
+                        using n8n to demonstrate AI integration,
+                        workflow automation, and conversational
+                        interaction.
+                    </p>
+
+
+                    <div class="tools">
+
+                        <span>n8n</span>
+                        <span>Automation</span>
+                        <span>AI Chatbot</span>
+                        <span>Workflow</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://drive.google.com/file/d/1dzevLsisKCo0CP_M9VMok5vBqwHM3Za0/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn"
+                        >
+
+                            Watch Demo
+
+                            <i class="fa-solid fa-play"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
 
         </div>
-
-    </section>
-
-
-
-    <!-- =====================================================
-         FOOTER
-    ====================================================== -->
-    <footer>
-
-        <div class="container footer-container">
-
-            <p>
-                © <span id="year"></span>
-                Khurotaayun Pesona Subagja
-            </p>
-
-
-            <a href="#home">
-                Back to top ↑
-            </a>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- =====================================================
-         IMAGE LIGHTBOX
-    ====================================================== -->
-    <div
-        id="lightbox"
-        class="lightbox"
-        aria-hidden="true"
-    >
-
-        <button
-            class="lightbox-close"
-            type="button"
-            aria-label="Close image"
-        >
-            ×
-        </button>
-
-
-        <img
-            id="lightbox-image"
-            src=""
-            alt=""
-        >
 
     </div>
 
-
-    <script src="script.js"></script>
-
-</body>
-
-</html>
+</section>
